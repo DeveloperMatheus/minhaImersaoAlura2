@@ -29,7 +29,7 @@ export default function Home() {
         <QuizLogo className="mx-auto"/>
         <Widget>
           <Widget.Header>
-            Cabeçalho de um componente
+            Cabeçalho de um componente Teste deploy
           </Widget.Header>
           <Widget.Content>
             <h1>The Legend of Zelda</h1>
