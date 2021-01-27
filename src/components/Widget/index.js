@@ -4,9 +4,7 @@ import db from '../../../db.json';
 const Widget = styled.div`
   margin: 24px auto;
   border: 1px solid ${({ theme }) => theme.colors.primary};
-  background-color: ${({ theme }) => {
-    return theme.colors.mainBg;
-  }};
+  background-color: ${({ theme }) => theme.colors.mainBg};
   border-radius: ${db.theme.borderRadius};
   overflow: hidden;
     h1, h2, h3 {
@@ -46,6 +44,6 @@ Widget.Content = styled.header`
     list-style: none;
     padding: 0;
   }
-`
+`;
 
 export default Widget;

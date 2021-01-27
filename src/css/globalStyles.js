@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -14,6 +14,9 @@ const GlobalStyle = createGlobalStyle`
     // Deixa branco no começo
     color: ${({ theme }) => theme.colors.contrastText};
   }
+  p {
+    margin: 0;
+  }
   html, body {
     min-height: 100vh;
   }
@@ -27,6 +30,14 @@ const GlobalStyle = createGlobalStyle`
     margin-right: auto !important;
     margin-left: auto !important;
   }
-`
+
+  .black--text {
+    color: #000;
+  }
+
+  .ml-3 {
+    margin-left: 15px;
+  }
+`;
 
 export default GlobalStyle;
