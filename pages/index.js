@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
 import { useRouter } from 'next/router';
 import db from '../db.json';
 import QuizBackground from '../src/components/QuizBackground';
@@ -7,17 +6,9 @@ import GitHubCorner from '../src/components/GitHubCorner';
 import Widget from '../src/components/Widget';
 import Footer from '../src/components/Footer';
 import QuizLogo from '../src/components/QuizLogo';
-
-const QuizContainer = styled.div`
-  width: 100%;
-  max-width: 350px;
-  padding-top: 45px;
-  margin: auto 10%;
-  @media screen and (max-width: 500px) {
-    margin: auto;
-    padding: 15px;
-  }
-`;
+import Input from '../src/components/Input';
+import Button from '../src/components/Button';
+import QuizContainer from '../src/components/QuizContainer';
 
 export default function Home() {
   const router = useRouter();
@@ -40,16 +31,15 @@ export default function Home() {
               });
             }}
             >
-              <input
+              <Input
+                onChange={(event) => setNome(event.target.value)}
                 placeholder="Seu nome"
-                onChange={(event) => {
-                  setNome(event.target.value);
-                  console.log('meu retorno ', nome, setNome);
-                }}
+                name="nomeInput"
+                value={nome}
               />
-              <button type="submit" disabled={nome.length === 0} className="ml-3">
-                Jogar
-              </button>
+              <Button type="submit" disabled={nome.length === 0} className="mt-5 mb-3">
+                Jogar {nome}
+              </Button>
             </form>
             <h1>The Legend of Zelda</h1>
             <p>Teste ipsum dolor</p>

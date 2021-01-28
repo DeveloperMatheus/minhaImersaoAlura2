@@ -38,6 +38,18 @@ const GlobalStyle = createGlobalStyle`
   .ml-3 {
     margin-left: 15px;
   }
+
+  .mt-3 {
+    margin-top: 15px;
+  }
+
+  .mt-5 {
+    margin-top: 25px;
+  }
+
+  .mb-3 {
+    margin-bottom: 15px;
+  }
 `;
 
 export default GlobalStyle;
