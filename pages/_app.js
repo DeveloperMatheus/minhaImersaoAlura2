@@ -14,6 +14,12 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <title>AluraQuiz - Modelo Base</title>
+        <meta
+          name="Description"
+          content="Author: A.N. Author,
+          Illustrator: P. Picture, Category: Books, Price: $17.99,
+          Length: 784 pages"
+        />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet" />
       </Head>

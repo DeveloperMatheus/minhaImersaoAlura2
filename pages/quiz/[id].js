@@ -4,9 +4,9 @@ import axios from 'axios';
 export default function QuizDetalhePage() {
   useEffect(() => {
     axios.get('https://api.github.com/orgs/axios')
-      .then(response => {
+      .then((response) => {
         console.log(response.data);
-      }, error => {
+      }, (error) => {
         console.log(error);
       });
   }, []);
