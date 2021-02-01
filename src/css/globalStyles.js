@@ -35,6 +35,53 @@ const GlobalStyle = createGlobalStyle`
     color: #000;
   }
 
+  .orange {
+    background-color: orange;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+
+  // Propriedades flex isoladas
+  .flex {
+    display: flex;
+  }
+  .flex-row {
+    flex-direction: row;
+  }
+  .flex-column {
+    flex-direction: column;
+  }
+  .align-center {
+    align-items: center;
+  }
+  .align-start {
+    align-items: start;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .justify-end {
+    justify-content: flex-end;
+  }
+  .justify-start {
+    justify-content: flex-start;
+  }
+  .justify-around {
+    justify-content: space-around;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .w-100 {
+    width: 100%;
+  }
+
   .ml-3 {
     margin-left: 15px;
   }
